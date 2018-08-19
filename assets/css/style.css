@@ -1,0 +1,254 @@
+body {
+    width: 100%;
+    margin: 0px;
+    background-image: url("concrete_seamless.png")
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+    border-bottom-width: 1.5px;
+}
+
+#headercontent {
+    margin: auto;
+    width: 960px;
+}
+
+.headers {
+    width: fit-content;
+    background-color: #4aaaa5;
+    padding: 10px 20px;
+    color: #ffffff;
+    float: left;
+}
+
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    float: right;
+    position: relative;
+    width: fit-content;
+    color: #cccccc;
+    margin-top: 40px;
+}
+
+.nav a {
+    text-decoration: none;
+    padding-right: 7px;
+    color: #b3b3b3;
+    border-right: 1px;
+    border-right-color: #cccccc;
+    border-right-style: solid;
+}
+
+#contact {
+    border: none
+}
+
+.main {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    padding: 20px;
+    background-color: #ffffff;
+    width: 920px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #dddddd;
+}
+
+#ryan {
+    margin-top: 5px;
+    margin-right: 15px;
+    float: left;
+}
+
+h1 {
+    font-family: Georgia, Times, 'Times New Roman', serif
+}
+
+.secondh1 {
+    border-bottom-style: solid;
+    border-bottom-color: #dddddd;
+    color: #4aaaa5;
+    padding-bottom: 30px;
+}
+
+.pcontent {
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #737373;
+}
+
+.class {
+    float: left;
+}
+
+#portleft {
+    float: left;
+}
+
+#portright {
+    float: right;
+    margin-right: 400px;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    height: 45px;
+    background-color: #666666;
+    border-top: 6px;
+    border-top-style: solid;
+    border-top-color: #4aaaa5;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+#copyright {
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    bottom: -7px;
+}
+
+#images1,
+#images2,
+#images3,
+#images4,
+#images5 {
+    position: relative;
+    height: 150px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 15px;
+    background-color: red;
+}
+
+#images1 {
+    background-image: url(../images/history.jpeg)
+}
+
+#images2 {
+    background-image: url(../images/space.jpeg)
+}
+
+#images3 {
+    background-image: url(../images/technology.jpeg)
+}
+
+#images4 {
+    background-image: url(../images/animals.jpeg)
+}
+
+#images5 {
+    background-image: url(../images/science.jpeg)
+}
+
+.banner {
+    color: white;
+    background-color: #4aaaa5;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 4px;
+    color: #595959;
+    display: block;
+}
+
+input {
+    padding: 4px;
+    margin: 2px;
+    width: 100%;
+}
+
+textarea {
+    height: 200px;
+    width: 100%;
+}
+
+button {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    border: 1px solid #4aaaa5;
+    height: 50px;
+    width: 150px;
+    margin-top: 10px;
+    background-color: #4aaaa5;
+}
+
+@media only screen and (max-width: 640px) {
+    .headers,
+    #headercontent,
+    nav {
+        padding: 0;
+        position: static;
+        text-align: center;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+    
+    .nav {
+        font-size: 90%;
+        position: static;
+    text-align: center;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+    
+    .main {
+        margin-top: 25px;
+        padding: 5px;
+        background-color: #ffffff;
+        width: 100vw;
+        font-size: 14px;
+        border-style: solid;
+        border-width: 1.5px;
+        border-color: #dddddd;
+    }
+    /* pictures to not float in portfolio */
+    #portleft,
+    #portright {
+        float: none;
+    }
+    /* paragraph/content */
+    .pcontent {
+        font-size: 90%;
+    }
+    /* resize my picture */
+    #ryan {
+        height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+        float: none;
+    }
+    html,
+    body {
+        width: 100vw;
+    }
+}
