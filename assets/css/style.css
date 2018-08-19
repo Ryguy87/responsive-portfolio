@@ -133,6 +133,7 @@ footer {
     background-size: cover;
     margin-bottom: 15px;
     background-color: red;
+    
 }
 
 #images1 {
@@ -155,6 +156,10 @@ footer {
     background-image: url(../images/science.jpeg)
 }
 
+
+
+
+
 .banner {
     color: white;
     background-color: #4aaaa5;
@@ -165,6 +170,7 @@ footer {
     font-size: 25px;
     padding-top: 4px;
     padding-bottom: 4px;
+    
 }
 
 label {
@@ -185,7 +191,7 @@ textarea {
     width: 100%;
 }
 
-button {
+button{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
@@ -197,58 +203,74 @@ button {
 }
 
 @media only screen and (max-width: 640px) {
-    .headers,
-    #headercontent,
-    nav {
+    
+    /* all 640 screen changes */
+    .headers, #headercontent, .nav {
         padding: 0;
-        position: static;
         text-align: center;
         width: 100%;
     }
 
-    h1 {
-        font-size: 25px;
-    }
-    
-    .nav {
-        font-size: 90%;
-        position: static;
-    text-align: center;
-    width: 100%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    }
-    
-    .main {
-        margin-top: 25px;
-        padding: 5px;
+
+    .main {        
+        margin-top: 25px;        
+        padding: 1%;
         background-color: #ffffff;
-        width: 100vw;
+        width:95%;
         font-size: 14px;
         border-style: solid;
         border-width: 1.5px;
-        border-color: #dddddd;
+        border-color: #dddddd;        
     }
-    /* pictures to not float in portfolio */
-    #portleft,
-    #portright {
-        float: none;
-    }
-    /* paragraph/content */
+
     .pcontent {
-        font-size: 90%;
+        font-size: 14px;
     }
-    /* resize my picture */
+    /* about me picture */
     #ryan {
-        height: 200px;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 150px;
-        float: none;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+        height: 70%;
+        width: 30%;   
     }
-    html,
-    body {
-        width: 100vw;
+
+    html, body {
+        width: 100%;
     }
+
+    
+    .pcontent, #ryan, .secondh1 {
+        padding: 10px;
+    }
+
+    nav {
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    /* Portfolio Page */
+    #portleft, #portright {
+        margin: 20px;
+    }
+
+    #portright {
+        float: left;
+    }
+
+    /* Contact Page */
+    input, label, textarea, button {
+        width: 75%;
+        margin: 0 20px;
+        padding: 10px;
+    }
+
+    button {
+        margin-bottom: 50px;        
+    }
+
+   
 }
+/* end 640px changes */
